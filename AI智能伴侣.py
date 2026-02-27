@@ -75,7 +75,7 @@ def delete_session(session_name):
 st.title("AI智能伴侣")
 
 #Logo
-st.logo("resources/logo.png")
+st.logo("🤖")
 
 #系统提示词
 system_prompt = """
@@ -189,4 +189,5 @@ if prompt:
     st.session_state.messages.append({"role": "assistant", "content": full_response})
 
     #保存会话信息
+
     save_session()
